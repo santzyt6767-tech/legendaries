@@ -1,0 +1,38 @@
+name: LegendaryWeapons
+version: ${project.version}
+main: dev.legendary.LegendaryPlugin
+api-version: '1.21'
+description: Custom legendary weapons with unique abilities
+authors: [1owski11]
+
+commands:
+  legendary:
+    description: Get a legendary weapon
+    usage: /legendary <weapon>
+    permission: legendary.get
+    aliases: [leg]
+  voidbane:
+    description: Claim the Voidbane sword
+    usage: /voidbane
+    permission: legendary.get
+  emberheart:
+    description: Claim the Emberheart sword
+    usage: /emberheart
+    permission: legendary.get
+  glacius:
+    description: Claim the Glacius sword
+    usage: /glacius
+    permission: legendary.get
+  stormbreaker:
+    description: Claim the Stormbreaker spear
+    usage: /stormbreaker
+    permission: legendary.get
+  soulreaper:
+    description: Claim the Soulreaper axe
+    usage: /soulreaper
+    permission: legendary.get
+
+permissions:
+  legendary.get:
+    description: Allows claiming legendary weapons
+    default: op
